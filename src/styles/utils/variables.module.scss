@@ -1,0 +1,36 @@
+@import '@/styles/utils/variables.scss';
+
+:export {
+  baseColor: $base-color;
+  baseColorLighter: $base-color-lighter;
+  baseColorLight: $base-color-light;
+  baseColorDark: $base-color-dark;
+  baseColorDarker: $base-color-darker;
+
+  baseSecondaryColor: $base-secondary-color;
+  baseSecondaryColorLighter: $base-secondary-color-lighter;
+  baseSecondaryColorLight: $base-secondary-color-light;
+  baseSecondaryColorDark: $base-secondary-color-dark;
+  baseSecondaryColorDarker: $base-secondary-color-darker;
+
+  primaryColor: $primary-color;
+  primaryColorLighter: $primary-color-lighter;
+  primaryColorLight: $primary-color-light;
+  primaryColorDark: $primary-color-dark;
+  primaryColorDarker: $primary-color-darker;
+
+  secondaryColor: $secondary-color;
+  secondaryColorLighter: $secondary-color-lighter;
+  secondaryColorLight: $secondary-color-light;
+  secondaryColorDark: $secondary-color-dark;
+  secondaryColorDarker: $secondary-color-darker;
+  
+  logoColor: $logo-color;
+  logoColorGrad1: $logo-color-grad-1;
+  logoColorGrad2: $logo-color-grad-2;
+  
+  brandNameColor: $brand-name-color;
+  brandNameColorGrad1: $brand-name-color-grad-1;
+  brandNameColorGrad2: $brand-name-color-grad-2;
+
+}

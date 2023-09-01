@@ -1,0 +1,25 @@
+@import '@/styles/utils/variables.scss';
+
+
+@mixin media_query($breakpoint) {
+  @if $breakpoint==lg {
+    @media only screen and (max-width: $px-lg) {
+      @content;
+    }
+  }
+  @if $breakpoint==md {
+    @media only screen and (max-width: $px-md) {
+      @content;
+    }
+  }
+  @if $breakpoint==sm {
+    @media only screen and (max-width: $px-sm) {
+      @content;
+    }
+  }
+  @if $breakpoint==xs {
+    @media only screen and (max-width: $px-xs) {
+      @content;
+    }
+  }
+}

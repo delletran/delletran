@@ -1,0 +1,80 @@
+// Colors
+
+$base-color: #333333;
+$base-color-light: #66666E55;
+$base-color-lighter: #66666E;
+$base-color-dark: #292825;
+$base-color-darker: #000000;
+
+$base-secondary-color: #3E5C76;
+$base-secondary-color-light: #748CAB;
+$base-secondary-color-lighter: #F0EBD8;
+$base-secondary-color-dark: #1D2D44;
+$base-secondary-color-darker: #0D1321;
+
+$primary-color: #66666E;
+$primary-color-lighter: #F4F4F6;
+$primary-color-light: #EDEDF0;
+$primary-color-dark: #9999A1;
+$primary-color-darker: #23232d;
+
+$secondary-color: #006D77;
+$secondary-color-lighter: #AECFDF;
+$secondary-color-light: #B7CECE;
+$secondary-color-dark: #1B2A41;
+$secondary-color-darker: #000000;
+
+// Palletes
+$black: #000000;
+$Dim_Gray: #66666E;
+$Taupe_Gray: #9999A1;
+$Platinum: #E6E6E9;
+$Anti-Flash_White_Light: #EDEDF0;
+$Anti-Flash_White_Lighter: #F4F4F6;
+
+$Black: #000000;
+$Rich_Black: #0C1821;
+$Oxford_Blue: #1B2A41;
+$Charcoal: #324A5F;
+$Lavander_Web: #CCC9DC;
+
+$Rich_black: #0D1321;
+$Prussian_blue: #1D2D44;
+$Payne_s_gray: #3E5C76;
+$Silver_Lake_Blue: #748CAB;
+$Eggshell: #F0EBD8;
+
+$GunMetal: #22333B;
+$Culumbia_Blue: #AECFDF;
+$Caribbean_Current: #006D77;
+$Ash_Gray: #B7CECE;
+
+$logo-color: $primary-color-light;
+$logo-color-grad-1: color-mix(in srgb, $primary-color-light 0%, $primary-color-light 40%);
+$logo-color-grad-2: color-mix(in srgb, $primary-color-light 0%, $primary-color-light 70%);
+
+$brand-name-color: $primary-color-light;
+$brand-name-color-grad-1: color-mix(in srgb, $primary-color-light 0%, $primary-color-light 40%);
+$brand-name-color-grad-2: color-mix(in srgb, $primary-color-light 0%, $primary-color-light 70%);
+
+
+// -----------------------------------------------------------------------------------------------
+// Sizes
+
+$nav-height: 10%;
+$footer-height: 23rem;
+$footer-height-md: 28rem;
+$footer-height-sm: 35rem;
+
+
+// z-index
+$navbar-z-index: 100;
+$navmenu-z-index: 105;
+
+$size__site_content_width: 1920px;
+
+$px-xs: 450px;
+$px-sm: 640px;
+$px-md: 960px;
+$px-lg: 1280px;
+$px-xl: 1920px;

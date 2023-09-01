@@ -1,0 +1,213 @@
+@import '@/styles/utils/variables.scss';
+
+#brand-container {
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+
+  
+  .brand-wrapper {
+    padding: 0.3125rem;
+    background-color: transparent;
+
+    
+    #logo-container {
+      display: flex;
+      justify-content: center;  
+      align-items: center;
+
+      #logo-wrapper {
+    
+        #logo {
+          path {
+            stroke: url(#logo-gradient-fill);
+            stroke-width: 1;
+          }
+          #logo-body {
+            stroke-dasharray: 2545;          
+            stroke-dashoffset: 2545; 
+            // filter: drop-shadow(3px 6px 2px black);
+          }
+          #logo-hex-mesh {      
+            stroke-dasharray: 1225;          
+            stroke-dashoffset: 1225;   
+          }
+        }
+      }
+    }
+
+    
+    #brand-name-container {
+      #brand-name-wrapper {
+        #brand-name {
+          fill: url(#brand-name-gradient-fill);
+          stroke: url(#brand-name-gradient-fill);
+          stroke-width: 1;
+          stroke-dasharray: 720;          
+          stroke-dashoffset: 720; 
+        }
+      }
+    }
+  }
+
+  .brand-animate-onload {  
+    #logo {
+      path {
+        fill: transparent;
+      }
+    }
+    #logo-body {
+        animation: animate-logo-body 5s linear forwards;
+        animation-iteration-count: 1;
+    }
+    #logo-hex-mesh{
+      animation: animate-logo-hex-mesh 2.5s linear forwards;
+    }
+    #brand-name{
+        animation: animate-brand-name 5s linear forwards;
+    }
+  }
+
+  .brand-animate-onhover {
+    #logo {
+      path {
+        fill: url(#logo-gradient-fill);
+      }
+    }
+  }
+
+  .brand-animate-onhover:hover {  
+    #logo-body {
+        animation: animate-logo-body 5s linear forwards;
+        animation-iteration-count: 1;
+    }
+    #logo-hex-mesh{
+      animation: animate-logo-hex-mesh 2.5s linear forwards;
+    }
+    #brand-name{
+        animation: animate-brand-name 5s linear forwards;
+    }
+  }
+}
+
+
+@keyframes animate-logo-body{
+  0% {
+    stroke-dashoffset: 0;
+    fill: url(#logo-gradient-fill);
+  }
+  5% {
+    stroke-dashoffset: 0;
+    fill: transparent;
+  }
+  25% {
+    stroke-dashoffset: 2545;
+    fill: transparent;
+  }
+  45% {
+    stroke-width: 8;
+    stroke-dashoffset: 5090;
+    fill: transparent;
+  }
+  50% {
+    fill: url(#logo-gradient-fill);
+  }
+  100% {
+    fill: url(#logo-gradient-fill);
+  }
+}
+
+@keyframes animate-logo-body-v2{
+  0% {
+    stroke-dashoffset: 0;
+    fill: url(#logo-gradient-fill);
+  }
+  10% {
+    stroke-dashoffset: 0;
+    fill: transparent;
+  }
+  50% {
+    stroke-dashoffset: 2545;
+    fill: transparent;
+  }
+  90% {
+    stroke-dashoffset: 5090;
+    fill: transparent;
+  }
+  100% {
+    stroke-dashoffset: 5090;
+    fill: url(#logo-gradient-fill);
+  }
+}
+
+
+@keyframes animate-logo-hex-mesh{
+  0% {
+    stroke-dashoffset: 0;
+    fill: url(#logo-gradient-fill);
+  }
+  10% {
+    stroke-dashoffset: 0;
+    fill: transparent;
+  }
+  50% {
+    stroke-dashoffset: 1225;
+    fill: transparent;
+  }
+  90% {
+    stroke-dashoffset: 2450;
+    fill: transparent;
+  }
+  100% {
+    stroke-dashoffset: 2450;
+    fill: url(#logo-gradient-fill);
+  }
+}
+
+
+@keyframes animate-brand-name{
+  0% {
+    stroke-dashoffset: 0;
+    fill: url(#brand-name-gradient-fill);
+  }
+  5% {
+    stroke-dashoffset: 0;
+    fill: transparent;
+  }
+  25% {
+    stroke-dashoffset: 720;
+    fill: transparent;
+  }
+  45% {
+    stroke-width: 6;
+    stroke-dashoffset: 1440;
+    fill: transparent;
+  }
+  50% {
+    stroke-dashoffset: 1440;
+    fill: url(#brand-name-gradient-fill);
+  }
+}
+
+@keyframes animate-brand-name-v2{
+    0% {
+      stroke-dashoffset: 0;
+      fill: url(#brand-name-gradient-fill);
+    }
+    10% {
+      stroke-dashoffset: 0;
+      fill: transparent;
+    }
+    50% {
+      stroke-dashoffset: 720;
+      fill: transparent;
+    }
+    90% {
+      stroke-dashoffset: 1440;
+      fill: transparent;
+    }
+    100% {
+      stroke-dashoffset: 1440;
+      fill: url(#brand-name-gradient-fill);
+    }
+}

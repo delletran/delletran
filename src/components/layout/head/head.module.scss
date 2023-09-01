@@ -1,0 +1,115 @@
+@import '@/styles/utils/variables.scss';
+
+.navbar {
+  position: sticky;
+  top: 0;
+  transform: scaleY(0);
+  transition: transform 200ms;
+  transform-origin: top;
+  box-shadow: 
+    0px 5px 5px -3px #AF935B33,
+    0px 8px 10px 1px #AF935B22,
+    0px 3px 14px 2px #AF935B11;
+  z-index: $navbar-z-index;
+
+  &_show {
+    transform: scaleY(1);
+    transition: transform 300ms;
+    transform-origin: top;
+  }
+
+  .navbar-toolbar {
+    display: flex;
+    padding: 0 10%;
+    width: 100%;
+    min-height: $nav-height;
+    background-color: $base-color-darker;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav-links {
+      margin: 0.5rem auto 0 auto  ;
+      text-decoration: none;
+    }
+
+    .nav-link, .nav-link-mobile {
+      margin: 0 1rem ;
+      padding: 0.5rem;
+      text-decoration: none;
+      font-size: 0.9375rem;
+      color: $secondary-color-lighter;
+      border: 1px solid transparent;
+      
+      &:hover {
+        color: $primary-color-dark;
+        border-bottom: 1px solid $primary-color-dark;
+      }
+
+      &_active {
+        color: $secondary-color-light;
+        border-bottom: 1px solid $secondary-color-light;
+      }
+    }
+
+    .pages_container_menu {
+      margin: 0.5rem auto 0 auto;
+      text-decoration: none;
+      justify-content: flex-end;
+    }
+    
+  }
+
+}
+
+
+.nav-mobile-menu {
+  z-index: $navmenu-z-index;
+
+  ul {
+    display: flex;
+    margin: 0;
+    padding: 1.25rem 0.25rem;
+    background-color: $base-color-dark;
+    justify-content: center;
+    align-items: center;
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+  }
+
+
+  .nav-link {
+    display: flex;
+    align-self: center;
+    margin: 0.5rem 0;
+    padding: 0 1.5rem;
+    min-width: max-content;
+    text-decoration: none;
+    font-size: 0.9375rem;
+    color: $secondary-color-lighter;
+    
+    &:hover {
+      color: $primary-color-dark;
+      border-bottom: 1px solid $primary-color-dark;
+    }
+
+    &_active {
+      color: $secondary-color-light;
+      border-bottom: 1px solid $secondary-color-light;
+    }
+  }
+}
+
+
+
+// .nav-link {
+//   &-mobile-active {
+//   background-color: $base-color-dark;
+//   color: $primary-color-dark;
+//   // border-bottom: 1px solid $primary-color-dark;
+//   }
+// }
+

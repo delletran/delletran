@@ -1,0 +1,143 @@
+@import '@/styles/utils/variables.scss';
+@import '@/styles/utils/media_query.scss';
+
+.hero_container {
+  display: flex;
+  width: 100%;
+  min-height: 90vh;
+  padding: 5rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $base-color-darker;
+
+  @include media_query(lg) {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .content_container {
+    width: 60%; 
+
+    @include media_query(lg) {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      max-width: 35rem;
+      justify-content: center;
+      align-items: flex-start;
+      
+      @include media_query(lg) {
+        justify-content: center;
+        align-items: center;
+      }
+
+      .sup_heading {
+        font-size: 1rem;
+        margin: 0 0.5rem;
+        color: $secondary-color;
+      }
+
+      .heading {
+        font-weight: 900;
+        font-size: 3.5rem;
+        text-transform: uppercase;
+        letter-spacing: -0.125rem;
+
+        @include media_query(lg) {
+          font-size: 3rem;
+        }
+      }
+
+      .sub_heading {
+        margin: 5% 0;
+        font-size: 0.875rem;
+        letter-spacing: 0.0625rem;
+        line-height: 1.125rem;
+        color: $secondary-color;
+      }
+      .sup_heading, .heading, .sub_heading {
+        @include media_query(lg) {
+          text-align: center;
+        }
+      }
+  
+
+    }
+
+    .button_wrapper {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      margin-top: 1.5rem;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      @include media_query(lg) {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3rem;
+        height: 8.5rem;
+      }
+    }
+  }
+
+  .image_wrapper {
+    object-fit: cover;
+    overflow:hidden;
+
+    @include media_query(lg) {
+      width: 60%;
+    }
+
+    @include media_query(md) {
+      width: 80%;
+    }
+
+    .image {
+      width: 100%;
+      height: auto;
+      bottom: 22%;
+      right: 4%;
+      object-fit: cover;
+      overflow:hidden;
+
+    }
+  }
+
+  .svg_wrapper {
+    position: relative;
+    height: inherit;
+    background-color: transparent;
+
+    #svg {
+      &_outer, &_middle, &_inner, &_outer2 {
+        position: absolute;
+        width: inherit;
+        height: auto;
+        bottom: 0;
+        right: 0;
+      }
+
+      &_inner {
+        fill: #493E0073;
+      }
+
+      &_middle {
+        mix-blend-mode: luminosity;
+        fill: #2F2D02CC;
+      }
+      &_outer {
+        fill: rgba(51, 51, 51);
+      }
+    }
+
+  }
+
+}

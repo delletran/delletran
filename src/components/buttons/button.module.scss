@@ -1,0 +1,88 @@
+@import '@/styles/utils/variables.scss';
+
+
+.btn {
+  border: 0.1rem solid $secondary-color-darker;
+  border-radius: 15rem;
+  text-align: center;
+
+  &__primary{
+    padding: 0.55rem 1rem;
+    font-weight: 600;
+    background-color: $secondary-color-light;
+    border-color: $base-color-darker;
+    border-radius: 15rem;
+    color: $secondary-color-dark;
+    text-transform: uppercase;
+
+    &:hover {
+      animation: animate-button 0.25s ease-in-out forwards;
+    }
+  }
+
+  &__secondary{
+    padding: 0.55rem 1rem;
+    font-weight: 600;
+    border-color: $secondary-color;
+    color: $secondary-color-light;
+    text-transform: uppercase;
+
+    &:hover {
+      font-weight: 500;
+      color: $secondary-color-lighter;
+      border-color: $secondary-color-lighter;
+      background-color: $secondary-color-darker;
+      animation: animate-button 0.25s linear forwards;
+    }
+  }
+
+  &__text {
+    background-color: transparent;
+    border-color: None;
+    border-radius: 0;
+  }
+
+  &__outlined {
+    border: 1px solid $secondary-color-light;
+    border-radius: 15rem;
+  }
+
+  &__contained {
+    border-radius: 15rem;
+  }
+
+  &__long {
+    width: 40%;
+  }
+
+  &__full {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  &__small {
+    font-size: small;
+    padding: 0.5rem;
+  }
+
+  &__medium {
+    font-size: medium;
+    padding: 0.5rem;
+  }
+
+  &__large {
+    font-size: large;
+    padding: 0.5rem;
+  }
+
+}
+
+
+
+@keyframes animate-button{
+  0% {}
+  100% {
+    background-color: $base-color-light;
+    color: $primary-color-light;
+  }
+}

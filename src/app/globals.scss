@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import '@/styles/utils/variables.scss'; 
+
+:root {
+  --foreground-rgb: $primary-color-lighter;
+  --background-start-rgb: $base-color-dark;
+  --background-end-rgb: $base-color-darker;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: $primary-color-darker;
+    --background-start-rgb: $base-color-lighter;
+    --background-end-rgb: $base-color-lighter;
+  }
+}
+
+* {
+  box-sizing: border-box;
+} 
+
+html, body {
+  color: $primary-color-lighter;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  // background: transparent;
+  background: radial-gradient($base-color-light, $base-color);
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .main-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 10vw;
+
+    @media only screen and (max-width: $px-lg) {
+      padding: 0 4.25rem;
+    }
+    @media only screen and (max-width: $px-md) {
+      flex-direction: row;
+      padding: 0;
+    }
+  }
+}
