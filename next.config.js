@@ -24,12 +24,6 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: "delletran.github.io/delletran.com",
-        port: "",
-        pathname: '/images/**',
-      },
-      {
-        protocol: "https",
         hostname: "delletran.com",
         port: "",
         pathname: '/images/**',
@@ -40,6 +34,12 @@ const nextConfig = {
         port: "",
         pathname: '/images/**',
       },
+      // {
+      //   protocol: "https",
+      //   hostname: "delletran.github.io/delletran",
+      //   port: "",
+      //   pathname: '/images/**',
+      // },
     ],
   },
 }

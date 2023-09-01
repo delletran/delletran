@@ -9,8 +9,8 @@ if (nodeEnv == "development") {
 }
   
 if (nodeEnv == "production") {
-  API_URL='http://127.0.0.1:8090'
-  FE_URL='https://delletran.github.io/delletran.com'
+  API_URL='https://delletran-backend.vercel.app'
+  FE_URL='https://delletran.vercel.app'
 }
 
 
