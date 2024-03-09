@@ -2,6 +2,11 @@ import NavBar from '@/components/layout/head/NavBar'
 import './globals.scss'
 import { Inter } from 'next/font/google'
 
+// import { Provider } from 'react-redux'
+// import Provider from 'react-redux'
+import { Provider } from '@/redux/services/provider'
+import { store } from '@/redux/services/store'
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -16,9 +21,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <NavBar />
-        {children}
+      <head>
+      </head>
+      <body
+        className={inter.className} 
+        // suppressHydrationWarning={true}
+      > 
+        <Provider>
+          <NavBar />
+          {children}
+        </Provider>
       </body>
     </html>
   )

@@ -56,6 +56,7 @@ function Hero({}: Props) {
             alt="logo"
             width={900}
             height={900}
+            priority
           />
         </div>
       </span>
