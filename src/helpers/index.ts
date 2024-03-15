@@ -1,4 +1,4 @@
-import { IAppTheme } from "@/types/styled_types";
+import { IAppTheme } from "@/types/style_types";
 
 const getTheme = () => {
   return typeof window !== 'undefined'

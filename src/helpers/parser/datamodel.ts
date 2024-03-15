@@ -97,7 +97,7 @@ const flattenKeys = (foreignKeyList: string[]) => {
         return fk != mainObject;
     });
 
-    return [...new Set(filteredForeignKeyList)];
+    return filteredForeignKeyList
 }
 
 function getVisibilityStatus(object: IDatamodelObjects, keys: readonly string[], displayMode: string = VISIBILITY_STATUS.SHOW) {

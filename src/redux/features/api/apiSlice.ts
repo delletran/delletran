@@ -2,18 +2,18 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 import type { PayloadAction } from '@reduxjs/toolkit'
 import type { RootState } from '@/redux/services/store'
 import { getTestQuery } from './apiThunks'
-import { IObjectAny, IObjectString, IDimensionKeys, IDimensionData } from '@/types'
+import { IDimensionKeys, IDimensionData, IObject } from '@/types'
 
 
 // Define a type for the slice state
 interface apiState {
-  datamodel: IObjectString
-  appConfig?: IObjectAny
-  data: {[key: string]: IObjectAny}
+  datamodel: IObject<string>
+  appConfig?: IObject<any>
+  data: {[key: string]: IObject<any>}
   loading: 'idle' | 'pending' | 'succeeded' | 'failed'
 }
 
-// Define the initial state using that type
+// Define the initial state using that type 
 
 const initialState = {
   // appConfig: nextConfig.publicRuntimeConfig,

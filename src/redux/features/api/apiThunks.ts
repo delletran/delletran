@@ -1,5 +1,5 @@
 import { createAsyncThunk, AsyncThunkPayloadCreator } from '@reduxjs/toolkit'
-import { IObjectAny, IObjectString, IDimensionKeys, IDimensionData } from '@/types'
+import { IObject, IDimensionKeys, IDimensionData } from '@/types'
 
 interface GetTestQueryPayload {
 
@@ -13,7 +13,7 @@ const getTestQuery = createAsyncThunk(
     // if (!response.ok) {
     //   throw new Error('Failed to fetch data')
     // }
-    return (await response.json()) as IObjectAny
+    return (await response.json()) as IObject<any>
   }
 )
 

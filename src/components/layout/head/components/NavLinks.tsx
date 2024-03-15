@@ -35,7 +35,7 @@ const NavLInks = (props: Props) => {
   const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
 
   useEffect(() => {
-    const handleResize = event => {
+    const handleResize = (event: Event) => {
       setInnerWidth(window.innerWidth)
       setInnerHeight(window.outerHeight)
       setScrollHeight(document.documentElement.scrollHeight)

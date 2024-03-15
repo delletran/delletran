@@ -3,7 +3,7 @@ import React, { ReactNode } from 'react'
 import Typography from '@mui/material/Typography';
 import { Divider, Paper, Slide, Stack } from '@mui/material';
 import { formatToId } from '@/helpers/parser/formater';
-import { IMUIColor } from '@/types/styled_types';
+import { IMUIColor } from '@/types/style_types';
 import { IObject } from '@/types';
 
 

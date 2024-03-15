@@ -1,6 +1,6 @@
 import { FetchBaseQueryError, createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import { SerializedError } from "@reduxjs/toolkit";
-import { IObjectAny } from '@/types'
+import { IObject } from '@/types'
 
 
 // const nextConfig: IObjectAny = {
@@ -22,7 +22,7 @@ import { IObjectAny } from '@/types'
 //   },
 // }
 
-interface IData extends IObjectAny {}
+interface IData extends IObject<any> {}
 
 
 export const mainApi = createApi({
